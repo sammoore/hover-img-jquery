@@ -11,7 +11,7 @@
 (function ( $ ) {
 
   swapImageSrc = function (image) {
-  	oldSrc = image.attr('src');
+    oldSrc = image.attr('src');
     newSrc = image.attr('data-hover-image')
 
     image.attr('src', newSrc);
@@ -24,12 +24,12 @@
   };
 
   $.fn.hoverImg = function ( hover_src ) {
-  	this.attr('data-hover-image', hover_src);
+    this.attr('data-hover-image', hover_src);
 
-  	this.hover(
-  		hoverCallback,
-  		hoverCallback
-  	);
+    this.hover(
+      hoverCallback,
+      hoverCallback
+    );
   };
 
 })( jQuery );
